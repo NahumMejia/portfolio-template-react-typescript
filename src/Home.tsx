@@ -1,39 +1,44 @@
 import './App.css';
-import Navbar from '@/Components/Navbar';
+import Header from '@/Components/Header';
 import imgProfile from '@/assets/your-photo.jpg';
-import { FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { IoMdArrowDown } from "react-icons/io";
 import { Separator } from './Components/Separator';
-import Button from './Components/button';
+import Footer from './Components/Footer';
+import { Button } from './Components/Button';
+import Technologies from './Components/Technologies';
+import { useRef } from 'react';
 
 function App() {
+  const techStackRef = useRef<HTMLElement | null>(null);
+
+  const scrollToTechStack = () => {
+    techStackRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
-      <div className="bg-slate-950 pt-20 min-h-screen">
-        <Navbar />
-        {/* Section of presentation */}
-        <div className="flex flex-row justify-center items-center gap-x-20 mx-auto px-10 pt-12 max-w-screen-xl">
-          {/* Profile image with border */}
-          <div className="relative w-96 h-96">
-            <div className="absolute -inset-3 border-4 border-blue-900 rounded-full"/>
+      <div className="bg-navy-blue pt-20 min-h-screen">
+        <Header />
+        <div className="flex md:flex-row flex-col justify-center items-center gap-x-20 gap-y-12 mx-auto px-6 sm:px-10 pt-12 max-w-screen-xl">
+          <div className="relative w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96">
+            <div className="absolute -inset-3 border-4 border-blue-900 rounded-full" />
             <img
               className="relative shadow-xl rounded-full w-full h-full object-cover"
               src={imgProfile}
               alt="Nahum Mejía"
             />
           </div>
-          {/* Text subsection */}
-          <div className="w-[30rem] text-white text-left">
+          <div className="w-full md:w-[30rem] text-white md:text-left text-center">
             <h1 className="mb-2 font-mono text-xl">Hi 👋, I am</h1>
-            <h1 className="mb-4 font-passion font-bold text-5xl leading-tight">
+            <h1 className="mb-4 font-passion font-bold text-4xl sm:text-5xl leading-tight">
               Nahum Mejia Doniz
             </h1>
             <span className="block mt-2 font-mono text-blue-100 text-lg typewriter">
               Software Engineer - FullStack Web Developer
             </span>
-            {/* Divider line */}
-            <Separator className='mt-5'/>
-            <div className="flex gap-6 mt-6 text-white text-2xl">
+            <Separator className="mt-5" />
+            <div className="flex justify-center md:justify-start gap-6 mt-6 text-white text-2xl">
               <a
                 href="https://github.com/NahumMejia"
                 target="_blank"
@@ -59,12 +64,26 @@ function App() {
                 <FaLinkedin />
               </a>
             </div>
-            <Button className="flex justify-center items-center hover:shadow-[0_0_15px_2px_#1e3a8a] mt-6 border-2 border-blue-900 rounded-sm w-[250px] h-10 font-bold text-blue-100 transition-all duration-300">
-                Who I Am
-              <IoMdArrowDown className="mt-1 ml-1" />
-            </Button>
+            <div className="flex justify-center md:justify-start">
+              <Button
+                variant={'ghost'}
+                onClick={scrollToTechStack}
+                className="flex justify-center items-center hover:shadow-[0_0_15px_2px_#1e3a8a] mt-6 border-2 border-blue-900 rounded-sm w-[250px] h-10 font-bold text-blue-100 transition-all duration-300"
+              >
+                <>
+                  Who I Am
+                  <IoMdArrowDown className="mt-1 ml-1" />
+                </>
+              </Button>
+            </div>
           </div>
         </div>
+        <div className="mt-20">
+        <section ref={techStackRef} className="bg-black">
+          <Technologies />
+        </section>
+        </div>
+        <Footer />
       </div>
     </>
   );
