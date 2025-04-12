@@ -1,11 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
+
+
+/*Color for the Background*/
 
 @theme {
   --color-navy-blue: #141A22;
 }
+
+/*New Fonts*/
+@theme {
+  --font-ghotic: "Special Gothic Expanded One", sans-serif;
+  --font-cardo: "Cardo",serif; 
+  --font-passion: "Passion One", sans-serif;
+}
+/*Animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+  width: 0;
+  animation-fill-mode: forwards;
+}
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
