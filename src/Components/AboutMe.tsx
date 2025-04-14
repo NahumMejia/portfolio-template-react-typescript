@@ -10,15 +10,18 @@ import { Icon } from "@iconify/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function Technologies() {
+  //search icons on https://icon-sets.iconify.design/
   const technologies = [
     { name: "Laravel", icon: "cib:laravel" },
     { name: "React", icon: "cib:react" },
+    { name: "Tailwind CSS", icon: "bxl:tailwind-css" },
     { name: "MySQL", icon: "grommet-icons:mysql" },
     { name: "Docker", icon: "simple-icons:docker" },
     { name: "MongoDB", icon: "simple-icons:mongodb" },
     { name: "JavaScript", icon: "akar-icons:javascript-fill" },
     { name: "TypeScript", icon: "cib:typescript" },
     { name: "Git", icon: "simple-icons:git" },
+    { name: "GitHub", icon: "akar-icons:github-fill" },
     { name: "Figma", icon: "solar:figma-bold" },
     { name: "C++", icon: "cib:cplusplus" },
   ];
@@ -26,7 +29,7 @@ function Technologies() {
   return (
     <div className="mx-auto mt-10 px-6 sm:px-10 max-w-screen-xl">
       <div className="mx-auto mb-12 max-w-xl text-center">
-        <h2 className="mb-4 font-passion font-bold text-white text-3xl sm:text-4xl">
+        <h2 className="mb-4 font-passion text-white text-3xl sm:text-4xl">
           About Me 👨‍💻
         </h2>
         <p className="text-gray-400 text-sm sm:text-base text-justify leading-relaxed">

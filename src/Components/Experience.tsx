@@ -113,7 +113,7 @@ import {
       <div className="bg-black px-6 sm:px-10 py-16">
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <h2 className="inline-block relative mb-6 font-bold text-white text-3xl sm:text-4xl">
-            <span className="z-10 relative">Experience 💼</span>
+            <span className="font-passion">Experience 💼</span>
           </h2>
           <p className="mx-auto max-w-2xl text-gray-400 text-sm sm:text-base text-justify leading-relaxed">
             With 2+ years of experience in software development, I specialize in

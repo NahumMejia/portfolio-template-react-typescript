@@ -1,6 +1,5 @@
 import './App.css';
 import Header from '@/Components/Header';
-import imgProfile from '@/assets/your-photo.jpg';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { IoMdArrowDown } from "react-icons/io";
 import { Separator } from './Components/Separator';
@@ -9,14 +8,15 @@ import { Button } from './Components/Button';
 import Technologies from './Components/AboutMe';
 import { useRef } from 'react';
 import Experience from './Components/Experience';
+import Projects from './Components/Projects';
 
 function App() {
+  
   const techStackRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToTechStack = () => {
     if (techStackRef.current) {
-      // Calculamos la posición correcta considerando el header fijo
-      const headerOffset = 80; // Ajusta esto según la altura de tu header
+      const headerOffset = 80;
       const elementPosition = techStackRef.current.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
       
@@ -36,7 +36,7 @@ function App() {
             <div className="absolute -inset-3 border-4 border-blue-900 rounded-full" />
             <img
               className="relative shadow-xl rounded-full w-full h-full object-cover"
-              src={imgProfile}
+              src='src/assets/your-photo2.jpg'
               alt="Nahum Mejía"
             />
           </div>
@@ -94,14 +94,16 @@ function App() {
         <section className="bg-black py-12">
           <Technologies />
         </section>
-          <section>
-            <Experience/>
-          </section>
+        <section>
+          <Experience/>
+        </section>
+        <section className='py-12'>
+          <Projects/>
+        </section>
         </div>
         <Footer/>
       </div>
     </>
   );
 }
-
 export default App;
