@@ -24,10 +24,16 @@ function Technologies() {
   ];
 
   return (
-    <div className="mx-auto px-6 sm:px-10 py-20 max-w-screen-xl">
-      <h2 className="mb-14 font-passion font-bold text-white text-3xl sm:text-4xl text-center">
-        My Tech Stack
-      </h2>
+    <div className="mx-auto mt-10 px-6 sm:px-10 max-w-screen-xl">
+      <div className="mx-auto mb-12 max-w-xl text-center">
+        <h2 className="mb-4 font-passion font-bold text-white text-3xl sm:text-4xl">
+          About Me 👨‍💻
+        </h2>
+        <p className="text-gray-400 text-sm sm:text-base text-justify leading-relaxed">
+          I'm a Software Engineer and Full Stack Web Developer with 2+ years of experience building responsive web and desktop apps. 
+          I focus on clean code, solid performance, and great user experiences.
+        </p>
+      </div>
       <Carousel className="mx-auto w-full max-w-6xl">
         <CarouselContent className="-ml-4">
           {technologies.map((tech, index) => (

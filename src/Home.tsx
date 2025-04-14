@@ -6,14 +6,25 @@ import { IoMdArrowDown } from "react-icons/io";
 import { Separator } from './Components/Separator';
 import Footer from './Components/Footer';
 import { Button } from './Components/Button';
-import Technologies from './Components/Technologies';
+import Technologies from './Components/AboutMe';
 import { useRef } from 'react';
+import Experience from './Components/Experience';
 
 function App() {
-  const techStackRef = useRef<HTMLElement | null>(null);
+  const techStackRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToTechStack = () => {
-    techStackRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (techStackRef.current) {
+      // Calculamos la posición correcta considerando el header fijo
+      const headerOffset = 80; // Ajusta esto según la altura de tu header
+      const elementPosition = techStackRef.current.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (
@@ -78,12 +89,16 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="mt-20">
-        <section ref={techStackRef} className="bg-black">
+        <div>
+        <div id="tech-stack-anchor" ref={techStackRef} className="mt-16" />
+        <section className="bg-black py-12">
           <Technologies />
         </section>
+          <section>
+            <Experience/>
+          </section>
         </div>
-        <Footer />
+        <Footer/>
       </div>
     </>
   );
