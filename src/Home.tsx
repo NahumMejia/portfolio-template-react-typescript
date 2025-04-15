@@ -36,7 +36,7 @@ function App() {
             <div className="absolute -inset-3 border-4 border-blue-900 rounded-full" />
             <img
               className="relative shadow-xl rounded-full w-full h-full object-cover"
-              src='src/assets/your-photo2.jpg'
+              src='/your-photo2.jpg'
               alt="Nahum Mejía"
             />
           </div>
