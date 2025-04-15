@@ -37,34 +37,44 @@ function Technologies() {
           I focus on clean code, solid performance, and great user experiences.
         </p>
       </div>
-      <Carousel className="mx-auto w-full max-w-6xl">
-        <CarouselContent className="-ml-4">
-          {technologies.map((tech, index) => (
-            <CarouselItem
-              key={index}
-              className="pl-4 basis-1/3 sm:basis-1/4 md:basis-1/5 lg:basis-1/6"
-            >
-              <Card className="bg-transparent shadow-none border-none">
-                <CardContent className="group flex flex-col justify-center items-center p-6 transition-transform hover:-translate-y-2 duration-300">
-                  <Icon
-                    icon={tech.icon}
-                    className="group-hover:drop-shadow-[0_0_25px_#3b82f6] mb-3 text-white text-5xl transition duration-300"
-                  />
-                  <span className="font-mono text-white text-lg">
-                    {tech.name}
-                  </span>
-                </CardContent>
-              </Card>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious>
-          <FaArrowLeft className="w-6 h-6 text-white hover:text-blue-400 transition duration-300" />
-        </CarouselPrevious>
-        <CarouselNext>
-          <FaArrowRight className="w-6 h-6 text-white hover:text-blue-400 transition duration-300" />
-        </CarouselNext>
-      </Carousel>
+      
+      {/* Agregamos padding horizontal para que los botones tengan espacio */}
+      <div className="relative px-8 md:px-12">
+        <Carousel className="mx-auto w-full max-w-6xl">
+          <CarouselContent className="-ml-4">
+            {technologies.map((tech, index) => (
+              <CarouselItem
+                key={index}
+                className="pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
+              >
+                <Card className="bg-transparent shadow-none border-none">
+                  <CardContent className="group flex flex-col justify-center items-center p-4 transition-transform hover:-translate-y-2 duration-300">
+                    <Icon
+                      icon={tech.icon}
+                      className="group-hover:drop-shadow-[0_0_25px_#3b82f6] mb-3 text-white text-3xl sm:text-4xl md:text-5xl transition duration-300"
+                    />
+                    <span className="font-mono text-white text-xs sm:text-sm md:text-lg text-center">
+                      {tech.name}
+                    </span>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          
+          <div className="top-1/2 -left-4 absolute -translate-y-1/2">
+            <CarouselPrevious className="bg-white border-blue-900 w-8 sm:w-10 h-8 sm:h-10">
+              <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-white hover:text-blue-400 transition duration-300" />
+            </CarouselPrevious>
+          </div>
+          
+          <div className="top-1/2 -right-4 absolute -translate-y-1/2">
+            <CarouselNext className="bg-white border-blue-900 w-8 sm:w-10 h-8 sm:h-10">
+              <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-white hover:text-blue-400 transition duration-300" />
+            </CarouselNext>
+          </div>
+        </Carousel>
+      </div>
     </div>
   );
 }
