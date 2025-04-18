@@ -5,9 +5,9 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-} from "@/Components/Card";
+} from "@/Components/Core/Card";
 import { Icon } from "@iconify/react";
-import { Badge } from "@/Components/Badge";
+import { Badge } from "@/Components/Core/Badge";
 
 const Projects = () => {
     const projects = [

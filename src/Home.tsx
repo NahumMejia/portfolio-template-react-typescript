@@ -1,14 +1,13 @@
 import './App.css';
-import Header from '@/Components/Header';
+import Header from '@/Components/Core/Header';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { IoMdArrowDown } from "react-icons/io";
-import { Separator } from './Components/Separator';
-import Footer from './Components/Footer';
-import { Button } from './Components/Button';
-import Technologies from './Components/AboutMe';
+import { Separator } from './Components/Core/Separator';
+import { Button } from './Components/Core/Button';
+import Technologies from './Components/App/AboutMe';
 import { useRef } from 'react';
-import Experience from './Components/Experience';
-import Projects from './Components/Projects';
+import Experience from './Components/App/Experience';
+import Projects from './Components/App/Projects';
 
 function App() {
 
@@ -45,9 +44,10 @@ function App() {
             Nahum Mejia Doniz
           </h1>
 
-          <span className="block mt-2 px-1 font-mono text-blue-100 sm:text-md text-sm text-xl break-words text-wrap typewriter">
+          <span className="block mt-2 px-1 max-w-full font-mono text-blue-100 sm:text-xl break-words">
             Software Engineer - FullStack Web Developer
           </span>
+
           <Separator className="mt-5" />
           <div className="flex justify-center md:justify-start gap-6 mt-6 text-white text-2xl">
             <a
@@ -102,8 +102,6 @@ function App() {
           <Projects />
         </section>
       </div>
-
-      <Footer />
     </div>
   );
 }

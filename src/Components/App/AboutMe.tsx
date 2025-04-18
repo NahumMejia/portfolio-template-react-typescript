@@ -1,11 +1,11 @@
-import { Card, CardContent } from "@/Components/Card";
+import { Card, CardContent } from "@/Components/Core/Card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/Components/Carousel";
+} from "@/Components/App/Carousel";
 import { Icon } from "@iconify/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -37,8 +37,6 @@ function Technologies() {
           I focus on clean code, solid performance, and great user experiences.
         </p>
       </div>
-      
-      {/* Agregamos padding horizontal para que los botones tengan espacio */}
       <div className="relative px-8 md:px-12">
         <Carousel className="mx-auto w-full max-w-6xl">
           <CarouselContent className="-ml-4">
@@ -63,14 +61,14 @@ function Technologies() {
           </CarouselContent>
           
           <div className="top-1/2 -left-4 absolute -translate-y-1/2">
-            <CarouselPrevious className="bg-white border-blue-900 w-8 sm:w-10 h-8 sm:h-10">
-              <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-white hover:text-blue-400 transition duration-300" />
+            <CarouselPrevious className="bg-white hover:bg-gray-400 w-8 sm:w-10 h-8 sm:h-10">
+              <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
             </CarouselPrevious>
           </div>
           
           <div className="top-1/2 -right-4 absolute -translate-y-1/2">
-            <CarouselNext className="bg-white border-blue-900 w-8 sm:w-10 h-8 sm:h-10">
-              <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-white hover:text-blue-400 transition duration-300" />
+            <CarouselNext className="bg-white hover:bg-gray-400 w-8 sm:w-10 h-8 sm:h-10">
+              <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
             </CarouselNext>
           </div>
         </Carousel>

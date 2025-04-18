@@ -5,7 +5,7 @@ import useEmblaCarousel, {
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/Components/Button"
+import { Button } from "@/Components/Core/Button"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
