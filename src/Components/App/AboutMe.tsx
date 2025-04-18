@@ -5,25 +5,25 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/Components/App/Carousel";
+} from "@/Components/Core/Carousel";
 import { Icon } from "@iconify/react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function Technologies() {
-  //search icons on https://icon-sets.iconify.design/
+  //search icons on iconify
   const technologies = [
-    { name: "Laravel", icon: "cib:laravel" },
-    { name: "React", icon: "cib:react" },
-    { name: "Tailwind CSS", icon: "bxl:tailwind-css" },
-    { name: "MySQL", icon: "grommet-icons:mysql" },
-    { name: "Docker", icon: "simple-icons:docker" },
-    { name: "MongoDB", icon: "simple-icons:mongodb" },
-    { name: "JavaScript", icon: "akar-icons:javascript-fill" },
-    { name: "TypeScript", icon: "cib:typescript" },
-    { name: "Git", icon: "simple-icons:git" },
-    { name: "GitHub", icon: "akar-icons:github-fill" },
-    { name: "Figma", icon: "solar:figma-bold" },
-    { name: "C++", icon: "cib:cplusplus" },
+    { name: "Laravel", icon: "cib:laravel", color: "#fb503b" },
+    { name: "React", icon: "cib:react", color: "#61DBFB" },
+    { name: "Tailwind CSS", icon: "bxl:tailwind-css", color: "#38BDF8" },
+    { name: "MySQL", icon: "grommet-icons:mysql", color: "#00758F" },
+    { name: "Docker", icon: "simple-icons:docker", color: "#2496ED" },
+    { name: "MongoDB", icon: "simple-icons:mongodb", color: "#47A248" },
+    { name: "JavaScript", icon: "akar-icons:javascript-fill", color: "#F7DF1E" },
+    { name: "TypeScript", icon: "cib:typescript", color: "#3178C6" },
+    { name: "Git", icon: "simple-icons:git", color: "#F05032" },
+    { name: "GitHub", icon: "akar-icons:github-fill", color: "#ffffff" },
+    { name: "Figma", icon: "solar:figma-bold", color: "#A259FF" },
+    { name: "C++", icon: "cib:cplusplus", color: "#00599C" },
   ];
 
   return (
@@ -49,23 +49,38 @@ function Technologies() {
                   <CardContent className="group flex flex-col justify-center items-center p-4 transition-transform hover:-translate-y-2 duration-300">
                     <Icon
                       icon={tech.icon}
-                      className="group-hover:drop-shadow-[0_0_25px_#3b82f6] mb-3 text-white text-3xl sm:text-4xl md:text-5xl transition duration-300"
+                      className={`tech-icon-${index} mb-3 text-white text-3xl sm:text-4xl md:text-5xl transition-all duration-300 group-hover:scale-110`}
                     />
-                    <span className="font-mono text-white text-xs sm:text-sm md:text-lg text-center">
+                    <span
+                      className={`tech-name-${index} font-mono text-white text-xs sm:text-sm md:text-lg text-center transition-all duration-300`}
+                    >
                       {tech.name}
                     </span>
+
+                    <style>
+                      {`
+                        .group:hover .tech-icon-${index} {
+                          color: ${tech.color};
+                          filter: drop-shadow(0 0 12px ${tech.color});
+                        }
+                        .group:hover .tech-name-${index} {
+                          color: ${tech.color};
+                          filter: drop-shadow(0 0 4px ${tech.color});
+                        }
+                      `}
+                    </style>
                   </CardContent>
                 </Card>
               </CarouselItem>
             ))}
           </CarouselContent>
-          
+
           <div className="top-1/2 -left-4 absolute -translate-y-1/2">
             <CarouselPrevious className="bg-white hover:bg-gray-400 w-8 sm:w-10 h-8 sm:h-10">
               <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
             </CarouselPrevious>
           </div>
-          
+
           <div className="top-1/2 -right-4 absolute -translate-y-1/2">
             <CarouselNext className="bg-white hover:bg-gray-400 w-8 sm:w-10 h-8 sm:h-10">
               <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-white" />

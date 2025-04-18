@@ -44,7 +44,7 @@ function App() {
             Nahum Mejia Doniz
           </h1>
 
-          <span className="block mt-2 px-1 max-w-full font-mono text-blue-100 sm:text-xl break-words">
+          <span className="block mt-2 px-1 max-w-full font-mono text-blue-100 sm:text-xl break-words typewriter">
             Software Engineer - FullStack Web Developer
           </span>
 
