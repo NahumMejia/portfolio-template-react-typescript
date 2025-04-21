@@ -24,6 +24,7 @@ const Projects = () => {
                 { name: "TypeScript", icon: "cib:typescript" },
                 { name: "Tailwind CSS", icon: "bxl:tailwind-css" },
                 { name: "Inertia JS", icon: "simple-icons:inertia" },
+                { name: "Spatie", icon: "" },
             ],
         },
         {

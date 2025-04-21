@@ -1,6 +1,6 @@
 import './App.css';
 import Header from '@/Components/Core/Header';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {SocialMedia} from './Components/App/SocialMedia';
 import { IoMdArrowDown } from "react-icons/io";
 import { Separator } from './Components/Core/Separator';
 import { Button } from './Components/Core/Button';
@@ -49,32 +49,8 @@ function App() {
           </span>
 
           <Separator className="mt-5" />
-          <div className="flex justify-center md:justify-start gap-6 mt-6 text-white text-2xl">
-            <a
-              href="https://github.com/NahumMejia"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition duration-300"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://instagram.com/nahum_mejiaa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-pink-400 transition duration-300"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://linkedin.com/in/nahúm-mejia-doniz-262a042b8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-500 transition duration-300"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
+          <SocialMedia />
+          
           <div className="flex justify-center md:justify-start">
             <Button
               variant={'ghost'}
