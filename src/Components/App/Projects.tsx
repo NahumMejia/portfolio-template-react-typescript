@@ -14,7 +14,7 @@ const Projects = () => {
         {
             title: "Multi-Vendor E-commerce Platform",
             description: "A Multi-Vendor E-commerce Platform built with Laravel, React and Typescript.",
-            image: "/project1.png",
+            image: "/Projects/project1.png",
             linkGithub: "private",
             linkDemo: "https://example.com/demo1",
             technologies: [
@@ -30,7 +30,7 @@ const Projects = () => {
         {
             title: "Project Management System",
             description: "A Project Management System built with Laravel, JavaScript and React.",
-            image: "/project2.png",
+            image: "/Projects/project2.png",
             linkGithub: "https://github.com/NahumMejia/project-management-laravel11-react",
             linkDemo: "https://example.com/demo3",
             technologies: [
@@ -45,7 +45,7 @@ const Projects = () => {
         {
             title: "Numerical Systems Converter",
             description: "A Numerical Systems Converter built with Python and Flet.",
-            image: "/project3.png",
+            image: "/Projects/project3.png",
             linkGithub: "https://github.com/NahumMejia/numerical-systems-converter-python-flet",
             linkDemo: "https://example.com/demo2",
             technologies: [
