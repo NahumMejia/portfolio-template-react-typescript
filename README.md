@@ -60,8 +60,12 @@ After installing all dependencies and running the development server you can sta
   - Once you're happy with the design, deploy it to platforms like Vercel, Netlify, or GitHub Pages.
 
 ## Screenshots
-![portfolio_1](/RepositoryImages/portfolio_1.png "portfolio_1")
-![portfolio_2](/RepositoryImages/portfolio-2.png "portfolio_2")
-![portfolio_3](/RepositoryImages/portfolio-3.png "portfolio_3")
-![portfolio_4](/RepositoryImages/portfolio-4.png "portfolio_4")
-![portfolio_5](/RepositoryImages/portfolio-5.png "portfolio_5")
+![portfolio_1](public/RepositoryImages/portfolio_1.png "portfolio_1")
+![portfolio_2](public/RepositoryImages/portfolio_2.png "portfolio_2")
+![portfolio_3](public/RepositoryImages/portfolio_3.png "portfolio_3")
+![portfolio_4](public/RepositoryImages/portfolio_4.png "portfolio_4")
+![portfolio_5](public/RepositoryImages/portfolio_5.png "portfolio_5")
+
+# Demo
+See my own portfolio deployed on Vercel:
+- https://nahum-portfolio.vercel.app/
