@@ -28,7 +28,7 @@ A modern and clean portfolio template where you can showcase who you are, your e
     - Live preview link
     - GitHub repository (You can choose if the repository is visible or not).
 - **Responsive Design**: Fully functional across devices (desktop, tablet, and mobile).
-- **And More Coming oon...**
+- **And More Coming soon...**
 
 ## Prerequisites
 Before setting up the project, ensure you have the following installed on your system:
