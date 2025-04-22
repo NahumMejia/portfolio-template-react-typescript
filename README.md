@@ -60,8 +60,8 @@ After installing all dependencies and running the development server you can sta
   - Once you're happy with the design, deploy it to platforms like Vercel, Netlify, or GitHub Pages.
 
 ## Screenshots
-!["portfolio-1](RepositoryImages/portfolio-1.png "prj-mng-1")
-!["portfolio-2](/portfolio-2.png "prj-mng-2")
-!["portfolio-3](/portfolio-3.png "prj-mng-3")
-!["portfolio-4](/portfolio-4.png "prj-mng-4")
-!["portfolio-5](/portfolio-5.png "prj-mng-5")
+![portfolio_1](/RepositoryImages/portfolio_1.png "portfolio_1")
+![portfolio_2](/RepositoryImages/portfolio-2.png "portfolio_2")
+![portfolio_3](/RepositoryImages/portfolio-3.png "portfolio_3")
+![portfolio_4](/RepositoryImages/portfolio-4.png "portfolio_4")
+![portfolio_5](/RepositoryImages/portfolio-5.png "portfolio_5")
