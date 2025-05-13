@@ -1,27 +1,28 @@
-import './App.css';
-import Header from '@/Components/Core/Header';
-import {SocialMedia} from './Components/App/SocialMedia';
+import "./App.css";
+import Header from "@/Components/Core/Header";
+import { SocialMedia } from "./Components/App/SocialMedia";
 import { IoMdArrowDown } from "react-icons/io";
-import { Separator } from './Components/Core/Separator';
-import { Button } from './Components/Core/Button';
-import Technologies from './Components/App/AboutMe';
-import { useRef } from 'react';
-import Experience from './Components/App/Experience';
-import Projects from './Components/App/Projects';
+import { Separator } from "./Components/Core/Separator";
+import { Button } from "./Components/Core/Button";
+import Technologies from "./Components/App/AboutMe";
+import { useRef } from "react";
+import Experience from "./Components/App/Experience";
+import Projects from "./Components/App/Projects";
+import Courses from "./Components/App/Courses";
 
 function App() {
-
   const techStackRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToTechStack = () => {
     if (techStackRef.current) {
       const headerOffset = 80;
       const elementPosition = techStackRef.current.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
@@ -34,7 +35,7 @@ function App() {
           <div className="absolute -inset-3 border-4 border-blue-900 rounded-full" />
           <img
             className="relative shadow-xl rounded-full w-full h-full object-cover"
-            src='/YourPhoto/your-photo2.jpg'
+            src="/YourPhoto/your-photo2.jpg"
             alt="Nahum Mejía"
           />
         </div>
@@ -50,10 +51,10 @@ function App() {
 
           <Separator className="mt-5" />
           <SocialMedia />
-          
+
           <div className="flex justify-center md:justify-start">
             <Button
-              variant={'ghost'}
+              variant={"ghost"}
               onClick={scrollToTechStack}
               className="flex justify-center items-center hover:shadow-[0_0_15px_2px_#1e3a8a] mt-6 border-2 border-blue-900 rounded-sm w-[250px] h-10 font-bold text-blue-100 transition-all duration-300"
             >
@@ -74,8 +75,11 @@ function App() {
         <section>
           <Experience />
         </section>
-        <section className='py-12'>
+        <section className="py-4">
           <Projects />
+        </section>
+        <section>
+          <Courses />
         </section>
       </div>
     </div>

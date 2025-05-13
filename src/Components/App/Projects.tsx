@@ -29,13 +29,30 @@ const Projects = () => {
       ],
     },
     {
+      title: "Comic Web Application",
+      description:
+        "A page to read and upload comics built with Laravel, React and TypeScript.",
+      image: "/Projects/project3.png",
+      linkGithub:
+        "https://github.com/NahumMejia/comics-app-laravel12-react-typescript.git",
+      linkDemo: "https://example.com/demo3",
+      technologies: [
+        { name: "Laravel", icon: "cib:laravel" },
+        { name: "React", icon: "cib:react" },
+        { name: "MySQL", icon: "grommet-icons:mysql" },
+        { name: "Tailwind CSS", icon: "bxl:tailwind-css" },
+        { name: "TypeScript", icon: "cib:typescript" },
+        { name: "Inertia JS", icon: "simple-icons:inertia" },
+      ],
+    },
+    {
       title: "Project Management System",
       description:
         "A Project Management System built with Laravel, JavaScript and React.",
       image: "/Projects/project2.png",
       linkGithub:
         "https://github.com/NahumMejia/project-management-laravel11-react",
-      linkDemo: "https://example.com/demo3",
+      linkDemo: "https://example.com/demo2",
       technologies: [
         { name: "Laravel", icon: "cib:laravel" },
         { name: "React", icon: "cib:react" },
@@ -43,18 +60,6 @@ const Projects = () => {
         { name: "Tailwind CSS", icon: "bxl:tailwind-css" },
         { name: "JavaScript", icon: "akar-icons:javascript-fill" },
         { name: "Inertia JS", icon: "simple-icons:inertia" },
-      ],
-    },
-    {
-      title: "Numerical Systems Converter",
-      description: "A Numerical Systems Converter built with Python and Flet.",
-      image: "/Projects/project3.png",
-      linkGithub:
-        "https://github.com/NahumMejia/numerical-systems-converter-python-flet",
-      linkDemo: "https://example.com/demo2",
-      technologies: [
-        { name: "Python", icon: "devicon-plain:python" },
-        { name: "Flet", icon: "none" },
       ],
     },
   ];
