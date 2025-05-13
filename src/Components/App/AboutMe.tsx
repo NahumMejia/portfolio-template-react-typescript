@@ -48,7 +48,7 @@ function Technologies() {
               <CarouselItem
                 key={index}
                 className="pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6"
-                >
+              >
                 <Card className="bg-transparent shadow-none border-none">
                   <CardContent className="group flex flex-col justify-center items-center p-4 transition-transform hover:-translate-y-2 duration-300">
                     <Icon
@@ -63,12 +63,10 @@ function Technologies() {
                     <style>
                       {`
                         .group:hover .tech-icon-${index} {
-                          color: ${tech.color};
-                          filter: drop-shadow(0 0 12px ${tech.color});
+                          color: ${tech.color}; 
                         }
                         .group:hover .tech-name-${index} {
                           color: ${tech.color};
-                          filter: drop-shadow(0 0 4px ${tech.color});
                         }
                       `}
                     </style>
