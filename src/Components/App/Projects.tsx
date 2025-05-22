@@ -8,6 +8,13 @@ import {
 } from "@/Components/Core/Card";
 import { Icon } from "@iconify/react";
 import { Badge } from "@/Components/Core/Badge";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../Core/Carousel";
 
 const Projects = () => {
   const projects = [
@@ -62,6 +69,18 @@ const Projects = () => {
         { name: "Inertia JS", icon: "simple-icons:inertia" },
       ],
     },
+    {
+      title: "Numerical System Converter",
+      description: "A Numerical System Converter built with Python and Flet",
+      image: "/Projects/project4.png",
+      linkGithub:
+        "https://github.com/NahumMejia/numerical-systems-converter-python-flet.git",
+      linkDemo: "https://example.com/demo2",
+      technologies: [
+        { name: "Python", icon: "akar-icons:python-fill" },
+        { name: "Flet", icon: "" },
+      ],
+    },
   ];
 
   return (
@@ -71,66 +90,83 @@ const Projects = () => {
           Projects 🌐
         </h2>
       </div>
-      <div className="gap-8 grid md:grid-cols-2 lg:grid-cols-3 mx-auto max-w-6xl">
-        {projects.map((project, index) => (
-          <Card
-            key={index}
-            className="flex flex-col justify-between bg-black hover:shadow-blue-900/20 hover:shadow-xl border-0 rounded-xl overflow-hidden text-white hover:scale-105 transition-all duration-300"
-          >
-            <div>
-              <div className="relative">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <CardHeader className="p-4 pb-0">
-                <CardTitle className="text-xl">{project.title}</CardTitle>
-                <CardDescription className="text-gray-300">
-                  {project.description}
-                </CardDescription>
-                <hr className="mt-4 border-gray-700 border-t" />
-              </CardHeader>
-              <CardContent className="p-4">
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, i) => (
-                    <Badge
-                      key={i}
-                      variant="secondary"
-                      className="bg-blue-900 hover:bg-blue-500 hover:shadow-lg text-white hover:scale-110 transition-all duration-300"
-                    >
-                      <Icon icon={tech.icon} className="text-sm" />
-                      {tech.name}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </div>
 
-            <CardFooter className="flex justify-center space-x-4 mt-4 px-0 py-4">
-              {project.linkGithub && project.linkGithub !== "private" && (
-                <a
-                  href={project.linkGithub}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white/10 hover:bg-white/20 p-2 rounded-full text-white transition"
-                >
-                  <Icon icon="bi:github" className="text-2xl" />
-                </a>
-              )}
-
-              <a
-                href={project.linkDemo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full text-white transition"
+      <div className="relative mx-auto px-12 w-full max-w-6xl">
+        <Carousel>
+          <CarouselContent className="flex -ml-4 overflow-visible">
+            {projects.map((project, index) => (
+              <CarouselItem
+                key={index}
+                className="flex-shrink-0 pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
               >
-                <Icon icon="mdi:eye" className="text-2xl" />
-              </a>
-            </CardFooter>
-          </Card>
-        ))}
+                <Card className="flex flex-col bg-black hover:shadow-2xl hover:shadow-blue-900/30 border-0 rounded-xl w-full min-h-[550px] text-white hover:scale-105 transition-all duration-300">
+                  <div className="relative w-full h-[200px]">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <CardHeader className="p-4 pb-0">
+                    <CardTitle className="text-xl">{project.title}</CardTitle>
+                    <CardDescription className="text-gray-300">
+                      {project.description}
+                    </CardDescription>
+                    <hr className="mt-4 border-gray-700 border-t" />
+                  </CardHeader>
+                  <CardContent className="p-4">
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, i) => (
+                        <Badge
+                          key={i}
+                          variant="secondary"
+                          className="flex items-center gap-1 bg-blue-900 hover:bg-blue-500 hover:shadow-lg text-white transition-all duration-300"
+                        >
+                          {tech.icon && (
+                            <Icon icon={tech.icon} className="text-sm" />
+                          )}
+                          {tech.name}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                  <CardFooter className="flex justify-center space-x-4 mt-4 px-0 py-4">
+                    {project.linkGithub && project.linkGithub !== "private" && (
+                      <a
+                        href={project.linkGithub}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white/10 hover:bg-white/20 p-2 rounded-full text-white transition"
+                      >
+                        <Icon icon="bi:github" className="text-2xl" />
+                      </a>
+                    )}
+                    <a
+                      href={project.linkDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-white/10 hover:bg-white/20 p-2 rounded-full text-white transition"
+                    >
+                      <Icon icon="mdi:eye" className="text-2xl" />
+                    </a>
+                  </CardFooter>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <div className="top-1/2 -left-6 z-10 absolute -translate-y-1/2">
+            <CarouselPrevious className="flex justify-center items-center bg-white hover:bg-gray-300 shadow-md rounded-full w-10 h-10 transition-all duration-300">
+              <Icon icon="mdi:chevron-left" className="w-5 h-5 text-black" />
+            </CarouselPrevious>
+          </div>
+
+          <div className="top-1/2 -right-6 z-10 absolute -translate-y-1/2">
+            <CarouselNext className="flex justify-center items-center bg-white hover:bg-gray-300 shadow-md rounded-full w-10 h-10 transition-all duration-300">
+              <Icon icon="mdi:chevron-right" className="w-5 h-5 text-black" />
+            </CarouselNext>
+          </div>
+        </Carousel>
       </div>
     </section>
   );

@@ -43,7 +43,7 @@ function Technologies() {
       </div>
       <div className="relative px-8 md:px-12">
         <Carousel className="mx-auto w-full max-w-6xl">
-          <CarouselContent className="-ml-4">
+          <CarouselContent className="ml-4">
             {technologies.map((tech, index) => (
               <CarouselItem
                 key={index}
