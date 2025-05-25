@@ -45,7 +45,7 @@ function App() {
             Nahum Mejia Doniz
           </h1>
 
-          <span className="block mt-2 px-1 max-w-full font-mono text-blue-100 sm:text-xl break-words typewriter">
+          <span className="block mt-2 px-1 max-w-full font-mono text-blue-100 text-xl sm:text-xl sm:whitespace-nowrap">
             Software Engineer - FullStack Web Developer
           </span>
 
@@ -75,12 +75,8 @@ function App() {
         <section>
           <Experience />
         </section>
-        <section className="py-4">
-          <Projects />
-        </section>
-        <section>
-          <Courses />
-        </section>
+        <Projects />
+        <Courses />
       </div>
     </div>
   );

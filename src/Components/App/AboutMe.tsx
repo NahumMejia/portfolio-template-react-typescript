@@ -75,16 +75,12 @@ function Technologies() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="top-1/2 -left-4 absolute -translate-y-1/2">
-            <CarouselPrevious className="bg-white hover:bg-gray-400 w-8 sm:w-10 h-8 sm:h-10">
-              <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
-            </CarouselPrevious>
-          </div>
-          <div className="top-1/2 -right-4 absolute -translate-y-1/2">
-            <CarouselNext className="bg-white hover:bg-gray-400 w-8 sm:w-10 h-8 sm:h-10">
-              <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
-            </CarouselNext>
-          </div>
+          <CarouselPrevious className="bg-white hover:bg-gray-400 mr-5">
+            <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
+          </CarouselPrevious>
+          <CarouselNext className="bg-white hover:bg-gray-400 ml-5">
+            <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
+          </CarouselNext>
         </Carousel>
       </div>
     </div>

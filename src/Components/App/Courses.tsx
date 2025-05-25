@@ -34,7 +34,7 @@ const Courses = () => {
   ];
 
   return (
-    <section className="bg-navy-blue px-4 sm:px-6 lg:px-8 py-12">
+    <section className="bg-navy-blue px-4 sm:px-6 lg:px-8 py-6">
       <div className="mx-auto mb-12 max-w-xl text-center">
         <h2 className="font-passion text-white text-3xl sm:text-4xl">
           Courses 🎓
@@ -71,17 +71,13 @@ const Courses = () => {
             ))}
           </CarouselContent>
 
-          <div className="top-1/2 -left-6 z-10 absolute -translate-y-1/2">
-            <CarouselPrevious className="flex justify-center items-center shadow-md hover:shadow-blue-900/30 rounded-full w-8 sm:w-10 h-8 sm:h-10 transition">
-              <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
-            </CarouselPrevious>
-          </div>
+          <CarouselPrevious className="bg-white hover:bg-gray-400 mr-5">
+            <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
+          </CarouselPrevious>
 
-          <div className="top-1/2 -right-6 z-10 absolute -translate-y-1/2">
-            <CarouselNext className="flex justify-center items-center bg-white hover:bg-gray-300 shadow-md rounded-full w-8 sm:w-10 h-8 sm:h-10 transition">
-              <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
-            </CarouselNext>
-          </div>
+          <CarouselNext className="bg-white hover:bg-gray-400 ml-5">
+            <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
+          </CarouselNext>
         </Carousel>
       </div>
     </section>
