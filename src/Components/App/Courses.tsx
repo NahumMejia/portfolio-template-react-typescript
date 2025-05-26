@@ -11,7 +11,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/Components/Core/Carousel";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Courses = () => {
   const courses = [
@@ -71,13 +70,9 @@ const Courses = () => {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="bg-white hover:bg-gray-400 mr-5">
-            <FaArrowLeft className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
-          </CarouselPrevious>
+          <CarouselPrevious className="bg-white hover:bg-gray-400 mr-5" />
 
-          <CarouselNext className="bg-white hover:bg-gray-400 ml-5">
-            <FaArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-black" />
-          </CarouselNext>
+          <CarouselNext className="bg-white hover:bg-gray-400 ml-5" />
         </Carousel>
       </div>
     </section>

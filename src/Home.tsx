@@ -7,7 +7,7 @@ import { Button } from "./Components/Core/Button";
 import Technologies from "./Components/App/AboutMe";
 import { useRef } from "react";
 import Experience from "./Components/App/Experience";
-import Projects from "./Components/App/Projects";
+import List from "./Components/App/Project/List";
 import Courses from "./Components/App/Courses";
 
 function App() {
@@ -75,7 +75,7 @@ function App() {
         <section>
           <Experience />
         </section>
-        <Projects />
+        <List />
         <Courses />
       </div>
     </div>
