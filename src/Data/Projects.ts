@@ -3,7 +3,7 @@ export const projects = [
     slug: "multi-vendor-ecommerce",
     title: "Multi-Vendor E-commerce",
     description:
-      "A Multi-Vendor E-commerce Platform built with Laravel, React and Typescript.",
+      "A Multi-Vendor E-commerce Platform with Admin, User and Vendor roles, where vendors can manage their products with variants.",
     image: "/Projects/Project1/projectCover.png",
     images: [
       "projectCover.png",
@@ -32,7 +32,7 @@ export const projects = [
     slug: "project-management-system",
     title: "Project Management System",
     description:
-      "A Project Management System built with Laravel, JavaScript and React.",
+      "A Project Management System where you can assign tasks, projects and manage users to control each project.",
     image: "/Projects/Project2/projectCover.png",
     images: [
       "projectCover.png",
@@ -62,7 +62,7 @@ export const projects = [
     slug: "comic-web-application",
     title: "Comic Web Application",
     description:
-      "A page to read and upload comics built with Laravel, React and TypeScript.",
+      "A page to read and upload comics, doesn't matter if it's a well-known comic or your own creation, with favorites comics feature.",
     image: "/Projects/Project3/projectCover.png",
     images: [
       "projectCover.png",
