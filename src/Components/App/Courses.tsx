@@ -12,25 +12,10 @@ import {
   CarouselPrevious,
 } from "@/Components/Core/Carousel";
 
+import { courses } from "@/Data/Courses";
+
+
 const Courses = () => {
-  const courses = [
-    {
-      title: "Introduction to MongoDB",
-      description: "I successfully completed the MongoDB introduction.",
-      image: "/Courses/course1.png",
-    },
-    {
-      title: "MongoDB PHP Developer Path",
-      description: "I successfully completed the MongoDB PHP Developer Path.",
-      image: "/Courses/course2.png",
-    },
-    {
-      title: "Introduction to Web Hacking",
-      description:
-        "I successfully completed the 'Introduction to Web Hacking' course.",
-      image: "/Courses/course3.png",
-    },
-  ];
 
   return (
     <section className="bg-navy-blue px-4 sm:px-6 lg:px-8 py-6">
@@ -54,7 +39,7 @@ const Courses = () => {
                       <img
                         src={course.image}
                         alt={course.title}
-                        className="w-full h-48 object-center object-cover"
+                        className="w-full h-70 object-center object-cover"
                       />
                     </div>
                     <CardHeader className="p-4 pb-0">
