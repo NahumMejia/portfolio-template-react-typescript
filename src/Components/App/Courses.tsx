@@ -15,7 +15,7 @@ import {
 import { courses } from "@/Data/Courses";
 
 
-const Courses = () => {
+function Courses() {
 
   return (
     <section className="bg-navy-blue px-4 sm:px-6 lg:px-8 py-6">

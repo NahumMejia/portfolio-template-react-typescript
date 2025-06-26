@@ -1,22 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@radix-ui/react-accordion";
 import { Icon } from '@iconify/react';
-
-//Array of the jobs data, search icons on iconify
-const jobData = [
-  {
-    title: "Backend Developer - TodoGo",
-    date: "Nov 2024 - Present",
-    icon: "material-symbols-light:computer-sharp",
-    description:
-      "Worked as a backend developer for Todo Go, a service app similar to Uber Eats but with various service types. Designed and maintained APIs to support different types of service categories and user interactions. Focused on ensuring scalability, security, and performance of the backend infrastructure.",
-    responsibilities: [
-      "Designed RESTful APIs to handle various service types, user orders, and real-time tracking.",
-      "Collaborated with frontend developers to ensure smooth integration between backend services and user interfaces.",
-      "Participated in the full software development lifecycle, including requirements gathering, design, development, testing, and deployment.",
-    ],
-  }
-];
-
+import { experience } from '@/Data/Experience';
 function Job() {
   return (
     <Accordion
@@ -24,7 +8,7 @@ function Job() {
       collapsible
       className="mx-auto mt-10 w-full max-w-3xl text-white"
     >
-      {jobData.map((job, index) => (
+      {experience.map((job, index) => (
         <AccordionItem key={index} value={`item-${index}`} className="group py-4 border-gray-700 border-b">
           <AccordionTrigger className="flex justify-between items-center opacity-80 hover:opacity-100 w-full font-semibold hover:text-blue-400 text-lg text-left transition-all duration-300">
             <div className="flex items-center gap-4">
@@ -38,9 +22,9 @@ function Job() {
               </div>
             </div>
             <div className="flex items-center bg-blue-900/30 group-hover:bg-blue-700/40 p-2 rounded-lg transition-colors duration-300">
-              <Icon 
-                icon="ph:caret-down-bold" 
-                className="text-blue-400 group-hover:text-blue-300 text-2xl data-[state=open]:rotate-180 transition-transform duration-500 ease-in-out" 
+              <Icon
+                icon="ph:caret-down-bold"
+                className="text-blue-400 group-hover:text-blue-300 text-2xl data-[state=open]:rotate-180 transition-transform duration-500 ease-in-out"
               />
             </div>
           </AccordionTrigger>
