@@ -106,7 +106,7 @@ export const projects = [
       "ProjectTaskManager_8.png",
       "ProjectTaskManager_9.png",
     ],
-    path: "/Projects/Project2/",
+    path: "/Projects/Project4/",
     linkGithub:
       "https://github.com/NahumMejia/project-management-laravel11-react",
     technologies: [
