@@ -7,7 +7,6 @@ export const technologies = [
     { name: "JavaScript", icon: "akar-icons:javascript-fill", color: "#F7DF1E" },
     { name: "TypeScript", icon: "cib:typescript", color: "#3178C6" },
     { name: "Git", icon: "simple-icons:git", color: "#F05032" },
-    { name: "GitHub", icon: "akar-icons:github-fill", color: "#ffffff" },
     { name: "Figma", icon: "solar:figma-bold", color: "#A259FF" },
     { name: "C++", icon: "cib:cplusplus", color: "#00599C" },
   ];

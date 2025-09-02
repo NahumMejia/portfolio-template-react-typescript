@@ -84,7 +84,6 @@ function List() {
                         <Icon icon="bi:github" className="text-2xl" />
                       </a>
                     )}
-
                     <Link
                       to={`/projects/${project.slug}`}
                       className="flex justify-center items-center bg-white/10 hover:bg-white/20 p-2 rounded-full w-10 h-10 text-white transition"
@@ -96,7 +95,6 @@ function List() {
               </CarouselItem>
             ))}
           </CarouselContent>
-
           <CarouselPrevious className="bg-white hover:bg-gray-400 mr-5" />
           <CarouselNext className="bg-white hover:bg-gray-400 ml-5" />
         </Carousel>
