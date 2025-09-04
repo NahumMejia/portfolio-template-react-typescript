@@ -41,6 +41,11 @@ export const courses = [
         description: "I succesfully completed the 'Introduction to Java' course.",
         image: "/Courses/course7.png",
         link: "https://www.sololearn.com/es/certificates/CC-IOYQRJMR"
+    },
+    {
+        title: "Java Intermediate",
+        description: "I succesfully completed the 'Java Intermediate' course.",
+        image: "/Courses/course8.png",
+        link: "https://www.sololearn.com/es/certificates/CC-FVPJBLHZ"
     }
-    
 ];
