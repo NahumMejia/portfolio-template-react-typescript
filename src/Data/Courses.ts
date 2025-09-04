@@ -15,14 +15,14 @@ export const courses = [
         title: "Introduction to Web Hacking",
         description: "I successfully completed the 'Introduction to Web Hacking' course.",
         image: "/Courses/course3.png",
-        link: "https://abcxperts.com/certificates/sin-sof-web-certificado/?quiz=69180&cert-nonce=2ced4c6902&time=1741365465"
+        link: "https://drive.google.com/file/d/17sQG1h7y994WVAwBuSSPwPW8wWQvKERh/view?usp=sharing"
 
     },
     {
         title: "Build A Web Site In Google Cloud",
         description: "I successfully completed the 'Build A Web Site In Google Cloud' course.",
         image: "/Courses/course4.png",
-        link: "https://www.credly.com/earner/earned/badge/6f35b4ef-ce3f-4b46-b61a-19495dc40c08"
+        link: "https://www.credly.com/badges/6f35b4ef-ce3f-4b46-b61a-19495dc40c08/public_url"
     },
     {
         title: "Google Cloud Essentials",
