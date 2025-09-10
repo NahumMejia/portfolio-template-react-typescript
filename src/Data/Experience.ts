@@ -1,14 +1,13 @@
 export const experience = [
     {
-        title: "Backend Developer - TodoGo",
-        date: "Nov 2024 - Present",
+        title: "Requirements Engineer and Designer - TodoGo",
+        date: "Nov 2024 - March 2025",        
         icon: "material-symbols-light:computer-sharp",
-        description: "Worked as a backend developer for Todo Go, a service app similar to Uber Eats but with various service types. Designed and maintained APIs to support different types of service categories and user interactions. Focused on ensuring scalability, security, and performance of the backend infrastructure.",
+        description: "Worked as a Requirements Engineer and Designer for Todo Go, a service app similar to Uber Eats but with various service types. Focused on creating prototypes, mockups, and detailed specifications using Figma to ensure business requirements aligned with design solutions.",
         responsibilities: [
-        "Acted as a functional analyst, translating business requirements into technical specifications and ensuring alignment between stakeholders and development teams.",
-        "Led backend development efforts, architecting and implementing scalable RESTful APIs to support service management, user orders, and real-time tracking.",
-        "Contributed across the full software development lifecycle, from gathering requirements and designing solutions to coding.",
-        ],
+            "Gathered and analyzed business requirements to translate them into clear and effective design solutions.",
+            "Designed interactive and user-friendly interfaces using Figma, ensuring a consistent and efficient user experience.",
+        ]
     },
     {
         title: "Full Stack Developer - Polytechnical University of Pachuca",
