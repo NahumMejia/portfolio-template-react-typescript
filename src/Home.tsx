@@ -46,7 +46,7 @@ function App() {
           </h1>
 
           <span className="block mt-2 px-1 max-w-full font-mono text-blue-100 text-xl sm:text-xl sm:whitespace-nowrap">
-            Software Engineer - FullStack Web Developer
+            Software Engineer Student - Web Developer
           </span>
 
           <Separator className="mt-5" />

@@ -18,7 +18,7 @@ function Technologies() {
           About Me 👨‍💻
         </h2>
         <p className="text-gray-400 text-sm sm:text-base text-justify leading-relaxed">
-          I'm a Software Engineer and Full Stack Web Developer with 2+ years of
+          I'm a Software Engineer and Full Stack Web Developer with 1+ years of
           experience building responsive web and desktop apps. I focus on clean
           code, solid performance, and great user experiences.
         </p>
